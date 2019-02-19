@@ -21,7 +21,7 @@ def execute_sql(sql, values=(), commit=False, single=False):
     else:
         results = cursor.fetchone() if single else cursor.fetchall()
 
-    cursor.close
+    cursor.close()
     return results
 
 @app.teardown_appcontext # this decorator ensures the db connection is destroyed when the app context is destroyed
