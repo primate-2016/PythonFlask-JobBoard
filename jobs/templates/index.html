@@ -1,3 +1,13 @@
 {% extends "layout.html" %} 
-<!-- ^ format this page, index.html using your base template of layout.html -->
-<h1>Jobs</h1>
+<!-- ^ format this page, index.html using your base template of layout.html, this will also import the macros imported
+into layout so you can also call them from here as below with show_jobs -->
+{% block content %}
+  <div class="columns">
+    <div class="column">
+      <h1>Jobs</h1>
+    </div>
+    <div class="column is-one-fifth">
+    </div>
+  </div>
+  {{ show_jobs(jobs)}}
+{% endblock %}
