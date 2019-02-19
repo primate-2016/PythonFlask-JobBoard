@@ -4,6 +4,8 @@
 
 ### Create Virtual Environment
 
+## ****** look in job/apps.py for the base app module. Templates/index.html for the base page
+
 In a terminal run the following commands from the root folder of the forked project. 
 
 Windows

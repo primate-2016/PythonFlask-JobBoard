@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+# you can preview your work by running 'flask run' in the root of your repo. Then visit http://localhost:5000 in your browser.
+app = Flask(__name__) # an instance of the Flask class, pass in the __name__ of this module (i.e. app)
 
 @app.route('/') # tell Flask to call this function when http://127.0.0.1/ or http://127.0.0.1/jobs is hit
 @app.route('/jobs')
